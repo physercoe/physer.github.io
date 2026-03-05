@@ -3,32 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>physer.github.io</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 640px;
-      margin: 80px auto;
-      padding: 0 1rem;
-      color: #222;
-    }
-    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    p  { color: #555; }
-    .badge {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 4px 10px;
-      background: #0d1117;
-      color: #58a6ff;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      font-family: monospace;
-    }
-  </style>
+  <title>Physer's Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>physer.github.io</h1>
-  <p>Hello, GitHub Pages! This page was deployed as a GitHub CLI authentication test.</p>
-  <div class="badge">gh auth login -- OK</div>
+
+<header>
+  <a class="site-title" href="/">Physer's Blog</a>
+  <nav>
+    <a href="/">Posts</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <ul class="post-list">
+
+    <li class="post-card">
+      <div class="meta">March 5, 2026</div>
+      <h2><a href="posts/hello-world.html">Hello, World — Getting Started with GitHub Pages</a></h2>
+      <p>A quick walkthrough of how this blog was set up using plain HTML and CSS, pushed via GitHub CLI from a dev machine.</p>
+      <div class="tags">
+        <span class="tag">github</span>
+        <span class="tag">devops</span>
+      </div>
+    </li>
+
+    <li class="post-card">
+      <div class="meta">March 4, 2026</div>
+      <h2><a href="posts/dev-environment.html">Setting Up a Linux Dev Environment for Claude Code</a></h2>
+      <p>Notes on configuring an AWS EC2 Ubuntu 22.04 instance — packages, Node.js, Python tools, and GitHub CLI authentication.</p>
+      <div class="tags">
+        <span class="tag">linux</span>
+        <span class="tag">tooling</span>
+        <span class="tag">claude-code</span>
+      </div>
+    </li>
+
+  </ul>
+</main>
+
+<footer>
+  &copy; 2026 Physer &mdash; Built with plain HTML &amp; CSS
+</footer>
+
 </body>
 </html>
